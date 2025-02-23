@@ -23,7 +23,7 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - airflow-pydantic
+    - airflow-pydantic >=0.2.0
     - apache-airflow >=2.8,<3
     - colorlog
     - hydra-core
