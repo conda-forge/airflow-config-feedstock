@@ -1,5 +1,5 @@
 {% set name = "airflow-config" %}
-{% set version = "1.6.0" %}
+{% set version = "1.6.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/airflow-config/airflow_config-{{ version }}.tar.gz
-  sha256: 6b9a5c4264a1255d71fdfa0cead016487765182b0585cfef587e11b34f2ca71d
+  sha256: cdbba2b7d00cdb294e20f9cffb89ec3ae779f64fc58c5fbe8ba35b8614ac8ee3
 
 build:
   number: 0
@@ -20,7 +20,10 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - hatchling
+    - hatch-jupyter-builder
+    - nodejs
+    - pip
+    - pnpm
   run:
     - python >={{ python_min }}
     - airflow-pydantic >=1,<1.1
