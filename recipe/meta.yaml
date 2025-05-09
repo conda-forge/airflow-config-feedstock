@@ -20,8 +20,11 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - hatchling
-  run:
+    - hatch-jupyter-builder
+    - nodejs
+    - pip
+    - pnpm
+  trun:
     - python >={{ python_min }}
     - airflow-pydantic >=1,<1.1
     - apache-airflow >=2.8,<3
