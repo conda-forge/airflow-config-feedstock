@@ -24,7 +24,7 @@ requirements:
     - nodejs
     - pip
     - pnpm
-  trun:
+  run:
     - python >={{ python_min }}
     - airflow-pydantic >=1,<1.1
     - apache-airflow >=2.8,<3
