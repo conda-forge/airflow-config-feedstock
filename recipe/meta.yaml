@@ -1,5 +1,5 @@
 {% set name = "airflow-config" %}
-{% set version = "1.7.1" %}
+{% set version = "1.8.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/airflow-config/airflow_config-{{ version }}.tar.gz
-  sha256: 9e4ad349a0432596408b140c81e56b889aa8c9655f89271a329f97d2a91b8cc5
+  sha256: 9494964f3ec028522802351b7dfecbe6cdb1e6b7dd38fc15aa2498042b9ffa7d
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
     - pnpm
   run:
     - python >={{ python_min }}
-    - airflow-pydantic >=1.1.1,<1.2
+    - airflow-pydantic >=1.1.2,<1.2
     - apache-airflow >=2.8,<3
     - colorlog
     - hydra-core
