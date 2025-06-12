@@ -27,7 +27,7 @@ requirements:
     - pnpm
   run:
     - python >={{ python_min }}
-    - airflow-pydantic >=1.1.2,<1.2
+    - airflow-pydantic >=1.2,<1.3
     - apache-airflow >=2.8,<3
     - colorlog
     - hydra-core
