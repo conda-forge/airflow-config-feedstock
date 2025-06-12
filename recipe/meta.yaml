@@ -1,5 +1,5 @@
 {% set name = "airflow-config" %}
-{% set version = "1.8.2" %}
+{% set version = "1.10.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/airflow-config/airflow_config-{{ version }}.tar.gz
-  sha256: 8af2da270c717e8ac259498e78c27e72bfef5f2a030c2288e93e582d9be1c6df
+  sha256: 2e0532e893ef7cce7dbab489a42d88d9148796b6d204c4d7460f630dcd514573
 
 build:
   number: 0
