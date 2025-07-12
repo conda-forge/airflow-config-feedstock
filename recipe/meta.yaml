@@ -1,5 +1,5 @@
 {% set name = "airflow-config" %}
-{% set version = "1.10.9" %}
+{% set version = "1.10.10" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/airflow-config/airflow_config-{{ version }}.tar.gz
-  sha256: fcd72081a3f431f012449c65efc7a4ae41f39e9ee0ccc6b93e1e5b0a93bdbd21
+  sha256: 250869af21db1714879f95a32d6978e51adc3270069c6f8c4ba92013352aece9
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - pnpm
   run:
     - python >={{ python_min }}
-    - airflow-pydantic >=1.2,<1.5
+    - airflow-pydantic >=1.2,<1.6
     - apache-airflow >=2.9,<3.1
     - apache-airflow-providers-ssh
     - apache-airflow-providers-standard
