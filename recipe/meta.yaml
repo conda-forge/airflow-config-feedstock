@@ -21,16 +21,13 @@ requirements:
     - python {{ python_min }}
     - pip
     - hatchling
-    - hatch-jupyter-builder
+    - hatch-js
     - nodejs
     - pip
     - pnpm
   run:
     - python >={{ python_min }}
-    - airflow-pydantic >=1.2,<1.6
-    - apache-airflow >=2.9,<3.1
-    - apache-airflow-providers-ssh
-    - apache-airflow-providers-standard
+    - airflow-pydantic >=1.5.4,<1.6
     - colorlog
     - hydra-core
     - jinja2
