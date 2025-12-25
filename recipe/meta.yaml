@@ -1,5 +1,5 @@
 {% set name = "airflow-config" %}
-{% set version = "1.11.0" %}
+{% set version = "1.11.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/airflow-config/airflow_config-{{ version }}.tar.gz
-  sha256: f06ea3684c18d2253892029db543ed1c6df891a9881617c33963c3fc3ff06aa3
+  sha256: 5b677187288ae9bd9995e2fe98ee0fab7f58cf08a88f6ea843754c220b08b671
 
 build:
   number: 0
@@ -32,7 +32,7 @@ requirements:
     - hydra-core
     - jinja2
     - omegaconf
-    - pydantic >=2
+    - pydantic >=2,<2.12
 
 test:
   requires:
