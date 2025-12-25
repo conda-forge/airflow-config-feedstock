@@ -32,7 +32,7 @@ requirements:
     - hydra-core
     - jinja2
     - omegaconf
-    - pydantic >=2
+    - pydantic >=2,<2.12
 
 test:
   requires:
