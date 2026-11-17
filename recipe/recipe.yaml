@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: airflow-config
-  version: "1.12.8"
+  version: "1.13.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/airflow-config/airflow_config-${{ version }}.tar.gz
-  sha256: 17f9658b29649b17a257c2e46f6cb7f84df9d3571f9d2a087e8e3b165bd2abab
+  sha256: fcc27faa71be83d1f2dca8e9cc6d0b54e7933dc87f2b129a89c7a3f1e0d82b4e
 
 build:
   number: 0
